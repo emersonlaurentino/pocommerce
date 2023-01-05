@@ -1,9 +1,9 @@
 import { Button } from "ui";
 
-export default function Web() {
+export default function AboutPage() {
   return (
     <div>
-      <h1>Web</h1>
+      About
       <Button />
     </div>
   );

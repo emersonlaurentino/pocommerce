@@ -1,6 +1,13 @@
-module.exports = {
+const withPocommerce = require("@pocommerce/core")({
+  provider: "vtex",
+  account: "storeframework",
+  edition: "@pocommerce/edition-fashion",
+  editionConfig: "./edition.config.tsx",
+});
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    transpilePackages: ["ui"],
-  },
 };
+
+module.exports = withPocommerce(nextConfig);

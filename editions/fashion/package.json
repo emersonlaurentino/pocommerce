@@ -1,0 +1,24 @@
+{
+  "name": "@pocommerce/edition-fashion",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "TIMING=1 eslint \"**/*.ts*\""
+  },
+  "peerDependencies": {
+    "next": ">=9.5.3",
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "next": "^13.1.1",
+    "tsconfig": "*",
+    "typescript": "^4.5.2"
+  }
+}
